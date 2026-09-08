@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIC-TAC-TOE // ARCADE TERMINAL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <main class="cabinet">
+    <header>
+      <h1 class="title glow" data-text="TIC-TAC-TOE">TIC-TAC-TOE</h1>
+      <p class="subtitle glow">:: INSERT COIN — 1P vs CPU ::</p>
+    </header>
+
+    <section class="scoreboard glow">
+      <div class="score"><span class="label">YOU</span><span id="score-x">0</span></div>
+      <div class="score"><span class="label">DRAW</span><span id="score-d">0</span></div>
+      <div class="score"><span class="label">CPU</span><span id="score-o">0</span></div>
+    </section>
+
+    <div id="status" class="status glow">YOUR MOVE, PLAYER X</div>
+
+    <div id="board" class="board" aria-label="tic tac toe board">
+      <button class="cell" data-i="0"></button>
+      <button class="cell" data-i="1"></button>
+      <button class="cell" data-i="2"></button>
+      <button class="cell" data-i="3"></button>
+      <button class="cell" data-i="4"></button>
+      <button class="cell" data-i="5"></button>
+      <button class="cell" data-i="6"></button>
+      <button class="cell" data-i="7"></button>
+      <button class="cell" data-i="8"></button>
+    </div>
+
+    <div class="controls">
+      <label class="mode glow">
+        FIRST MOVE:
+        <select id="first">
+          <option value="X">PLAYER</option>
+          <option value="O">CPU</option>
+        </select>
+      </label>
+      <button id="reset" class="btn glow">NEW GAME</button>
+    </div>
+
+    <footer class="glow">v1.0 — POWERED BY PYTHON &amp; MINIMAX</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
