@@ -119,6 +119,7 @@ header { text-align: center; margin-bottom: 18px; }
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 6px;
   background: var(--grid-line);
   border: 1px solid var(--grid-line);
@@ -136,6 +137,9 @@ header { text-align: center; margin-bottom: 18px; }
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
   transition: background 0.12s ease, box-shadow 0.12s ease;
   text-shadow: 0 0 6px var(--shadow), 0 0 16px var(--shadow);
 }
